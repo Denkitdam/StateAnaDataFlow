@@ -16,7 +16,6 @@ struct LoginView: View {
     
     
     @EnvironmentObject private var user: UserSettings
-    @AppStorage("UserName", store: .standard) var userName = ""
     
     
     
