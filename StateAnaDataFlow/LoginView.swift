@@ -9,7 +9,7 @@ import SwiftUI
 
 struct LoginView: View {
     @State private var name = ""
-    @State private var buttonAccess = true
+    @State private var buttonBlur = true
     
     @State private var lettersCounter = 0
     @State private var counterColor = Color(.red)
@@ -24,7 +24,7 @@ struct LoginView: View {
         VStack {
             HStack {
                 TextField("Enter your name...", text: $name)
-                .multilineTextAlignment(.center)
+                    .multilineTextAlignment(.center)
                 Text(lettersCounter.formatted())
                     .foregroundColor(counterColor)
             }
@@ -34,26 +34,24 @@ struct LoginView: View {
                     Text("OK")
                 }
             }
-            .disabled(buttonAccess)
+            .disabled(buttonBlur)
         }
         .padding()
         .onChange(of: name) { newValue in
+            user.validate(name: name)
             lettersCounter = name.count
-            validateName()
+            if user.isValid {
+                buttonBlur = false
+                counterColor = Color(.green)
+            }
         }
     }
-
+    
     private func login() {
         if !name.isEmpty {
             user.name = name
             user.isLoggedIn.toggle()
             userName = name
-        }
-    }
-    func validateName() {
-        if name.count == 3 {
-            buttonAccess.toggle()
-            counterColor = Color(.green)
         }
     }
 }
