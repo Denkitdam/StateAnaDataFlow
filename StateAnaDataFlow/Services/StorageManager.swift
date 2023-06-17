@@ -27,6 +27,11 @@ final class StorageManager {
         userDefaults.removeObject(forKey: key)
         print("user deleted")
     }
+    func fetchUser() -> User {
+        guard let data = userDefaults.data(forKey: key) else { return User(name: "") }
+        guard let user = try? JSONDecoder().decode(User.self, from: data) else { return User(name: "") }
+        return user
+    }
     
     
 }

@@ -5,6 +5,6 @@
 //  Created by Denis Kitaev on 17.06.2023.
 //
 
-struct User: Encodable {
+struct User: Codable {
     let name: String
 }
