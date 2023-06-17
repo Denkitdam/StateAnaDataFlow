@@ -15,8 +15,8 @@
 		A88811622A3A3F0100A4487D /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A88811612A3A3F0100A4487D /* LoginView.swift */; };
 		A88811642A3A3FE800A4487D /* UserSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = A88811632A3A3FE800A4487D /* UserSettings.swift */; };
 		A88811662A3A411000A4487D /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A88811652A3A411000A4487D /* RootView.swift */; };
-		C8AF4D7A2A3DC27B0039449E /* StorageManger.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8AF4D792A3DC27B0039449E /* StorageManger.swift */; };
 		C8AF4D7C2A3E4FCD0039449E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8AF4D7B2A3E4FCD0039449E /* User.swift */; };
+		C8AF4D7E2A3E500C0039449E /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8AF4D7D2A3E500C0039449E /* StorageManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,8 +29,8 @@
 		A88811612A3A3F0100A4487D /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		A88811632A3A3FE800A4487D /* UserSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSettings.swift; sourceTree = "<group>"; };
 		A88811652A3A411000A4487D /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
-		C8AF4D792A3DC27B0039449E /* StorageManger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManger.swift; sourceTree = "<group>"; };
 		C8AF4D7B2A3E4FCD0039449E /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		C8AF4D7D2A3E500C0039449E /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,7 +47,6 @@
 		A88811452A3A1FFC00A4487D = {
 			isa = PBXGroup;
 			children = (
-				C8AF4D792A3DC27B0039449E /* StorageManger.swift */,
 				A88811502A3A1FFC00A4487D /* StateAnaDataFlow */,
 				A888114F2A3A1FFC00A4487D /* Products */,
 			);
@@ -71,6 +70,7 @@
 				C8AF4D7B2A3E4FCD0039449E /* User.swift */,
 				A888115F2A3A388800A4487D /* TimeCounter.swift */,
 				A88811632A3A3FE800A4487D /* UserSettings.swift */,
+				C8AF4D7D2A3E500C0039449E /* StorageManager.swift */,
 				A88811552A3A1FFD00A4487D /* Assets.xcassets */,
 				A88811572A3A1FFD00A4487D /* Preview Content */,
 			);
@@ -155,9 +155,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C8AF4D7A2A3DC27B0039449E /* StorageManger.swift in Sources */,
 				A88811602A3A388800A4487D /* TimeCounter.swift in Sources */,
 				A88811542A3A1FFC00A4487D /* ContentView.swift in Sources */,
+				C8AF4D7E2A3E500C0039449E /* StorageManager.swift in Sources */,
 				A88811662A3A411000A4487D /* RootView.swift in Sources */,
 				C8AF4D7C2A3E4FCD0039449E /* User.swift in Sources */,
 				A88811622A3A3F0100A4487D /* LoginView.swift in Sources */,
