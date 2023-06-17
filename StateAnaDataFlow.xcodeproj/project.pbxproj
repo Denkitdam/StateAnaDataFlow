@@ -63,14 +63,10 @@
 		A88811502A3A1FFC00A4487D /* StateAnaDataFlow */ = {
 			isa = PBXGroup;
 			children = (
-				A88811512A3A1FFC00A4487D /* StateAnaDataFlowApp.swift */,
-				A88811532A3A1FFC00A4487D /* ContentView.swift */,
-				A88811612A3A3F0100A4487D /* LoginView.swift */,
-				A88811652A3A411000A4487D /* RootView.swift */,
-				C8AF4D7B2A3E4FCD0039449E /* User.swift */,
-				A888115F2A3A388800A4487D /* TimeCounter.swift */,
-				A88811632A3A3FE800A4487D /* UserSettings.swift */,
-				C8AF4D7D2A3E500C0039449E /* StorageManager.swift */,
+				C8AF4D822A3E5CCF0039449E /* App */,
+				C8AF4D812A3E5CBB0039449E /* Views */,
+				C8AF4D802A3E5C9B0039449E /* Services */,
+				C8AF4D7F2A3E5C730039449E /* Models */,
 				A88811552A3A1FFD00A4487D /* Assets.xcassets */,
 				A88811572A3A1FFD00A4487D /* Preview Content */,
 			);
@@ -83,6 +79,42 @@
 				A88811582A3A1FFD00A4487D /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C8AF4D7F2A3E5C730039449E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C8AF4D7B2A3E4FCD0039449E /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C8AF4D802A3E5C9B0039449E /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				A888115F2A3A388800A4487D /* TimeCounter.swift */,
+				A88811632A3A3FE800A4487D /* UserSettings.swift */,
+				C8AF4D7D2A3E500C0039449E /* StorageManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		C8AF4D812A3E5CBB0039449E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A88811532A3A1FFC00A4487D /* ContentView.swift */,
+				A88811612A3A3F0100A4487D /* LoginView.swift */,
+				A88811652A3A411000A4487D /* RootView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C8AF4D822A3E5CCF0039449E /* App */ = {
+			isa = PBXGroup;
+			children = (
+				A88811512A3A1FFC00A4487D /* StateAnaDataFlowApp.swift */,
+			);
+			path = App;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

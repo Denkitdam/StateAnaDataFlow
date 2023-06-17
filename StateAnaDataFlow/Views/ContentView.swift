@@ -11,6 +11,8 @@ struct ContentView: View {
     @StateObject private var timer = TimeCounter()
     @EnvironmentObject private var user: UserSettings
     
+    private let storageManager = StorageManager.shared
+    
     var body: some View {
         VStack {
             Text("Hi, \(user.name)!")
@@ -26,8 +28,27 @@ struct ContentView: View {
             
             Spacer()
             
+            Button(action: logOut) {
+                Text("Log out")
+                    .font(.title)
+                    .fontWeight(.bold)
+                    .foregroundColor(.white)
+            }
+            .frame(width: 200, height: 60)
+            .background(.blue)
+            .cornerRadius(20)
+            .overlay {
+                RoundedRectangle(cornerRadius: 20)
+                    .stroke(.black, lineWidth: 4)
+            }
+            
             
         }
+    }
+    
+    private func logOut() {
+        storageManager.removeUser()
+        user.isLoggedIn.toggle()
     }
 }
 

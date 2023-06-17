@@ -17,6 +17,8 @@ struct LoginView: View {
     
     @EnvironmentObject private var user: UserSettings
     
+    private let storageManager = StorageManager.shared
+    
     
     
     var body: some View {
@@ -50,7 +52,8 @@ struct LoginView: View {
         if !name.isEmpty {
             user.name = name
             user.isLoggedIn.toggle()
-            userName = name
+            let user = User(name: name)
+            storageManager.add(user: user)
         }
     }
 }
