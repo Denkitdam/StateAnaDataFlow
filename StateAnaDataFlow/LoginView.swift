@@ -16,6 +16,7 @@ struct LoginView: View {
     
     
     @EnvironmentObject private var user: UserSettings
+    @AppStorage("UserName", store: .standard) var userName = ""
     
     
     
@@ -41,11 +42,12 @@ struct LoginView: View {
             validateName()
         }
     }
-    
+
     private func login() {
         if !name.isEmpty {
             user.name = name
             user.isLoggedIn.toggle()
+            userName = name
         }
     }
     func validateName() {
