@@ -16,6 +16,5 @@ final class UserSettings: ObservableObject {
         if name.count == 3 {
             isValid.toggle()
         }
-        
     }
 }

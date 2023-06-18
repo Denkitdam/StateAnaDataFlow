@@ -20,12 +20,10 @@ final class StorageManager {
     func add(user: User) {
         guard let data = try? JSONEncoder().encode(user) else { return }
         userDefaults.set(data, forKey: key)
-        print("user added")
     }
     
     func removeUser() {
         userDefaults.removeObject(forKey: key)
-        print("user deleted")
     }
     func fetchUser() -> User {
         guard let data = userDefaults.data(forKey: key) else { return User(name: "") }
